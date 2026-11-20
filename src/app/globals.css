@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", serif;
+
+  /* Dolphin Painter Brand Palette — matched to logo */
+  --color-alabaster: #f7fafd;
+  --color-linen: #edf4fb;
+  --color-stone-border: #d9e5f2;
+  --color-georgian: #081e3d;
+  --color-georgian-light: #0d2f5c;
+  --color-forest: #0f62b5;
+  --color-ochre: #1996e6;
+  --color-ochre-dark: #0e74bd;
+  --color-ink: #0c1b2e;
+  --color-muted-ink: #4d6078;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #f7fafd;
+  color: #0c1b2e;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #f7fafd;
+  color: #0c1b2e;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Subtle architectural grid for dark Atlantic navy sections */
+.bg-architectural-grid {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.055) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.055) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Subtle dot pattern for light mist sections */
+.bg-linen-grid {
+  background-image:
+    radial-gradient(rgba(8, 30, 61, 0.065) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Selection styling */
+::selection {
+  background-color: #1996e6;
+  color: #ffffff;
+}
