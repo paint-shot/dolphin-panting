@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { X, ArrowUpRight } from "lucide-react";
 import { SITE_CONFIG } from "@/lib/site-config";
+import { trackEvent } from "@/lib/admin-store";
 
 export function WhatsAppIcon({ className = "h-5 w-5" }: { className?: string }) {
   return (
@@ -57,6 +58,12 @@ export default function WhatsAppWidget() {
               href={SITE_CONFIG.contacts.primaryPhone.whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() =>
+                trackEvent(
+                  "whatsapp_click",
+                  `Primary Line (${SITE_CONFIG.contacts.primaryPhone.display}) · Floating Widget`
+                )
+              }
               className="flex items-center justify-between rounded-xl border border-stone-border bg-alabaster px-3.5 py-2.5 transition-colors hover:border-[#25D366] hover:bg-[#25D366]/5"
             >
               <div className="flex items-center gap-3">

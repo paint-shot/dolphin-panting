@@ -7,9 +7,9 @@ import { SITE_CONFIG } from "@/lib/site-config";
 
 const NAV_LINKS = [
   { label: "Services", href: "#services" },
-  { label: "Transformations", href: "#gallery" },
-  { label: "In Action", href: "#videos" },
-  { label: "Process", href: "#process" },
+  { label: "Before & After", href: "#gallery" },
+  { label: "Gallery", href: "#photos" },
+  { label: "Videos", href: "#videos" },
   { label: "Contact", href: "#contact" },
 ];
 

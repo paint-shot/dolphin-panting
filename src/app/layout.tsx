@@ -5,7 +5,7 @@ import { SITE_CONFIG } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: `${SITE_CONFIG.brandName} | Master Painters & Decorators in Dublin, Ireland`,
   description:
-    "Bespoke residential, period exterior, kitchen spray-finishing, and commercial painting across Dublin. Free no-obligation quotes. Call 085 220 0539 or 089 960 9741.",
+    "Bespoke residential, period exterior, kitchen spray-finishing, and commercial painting across Dublin. Free no-obligation quotes. Call 089 960 9741 or 085 220 0539.",
   keywords: [
     "painters Dublin",
     "painting and decorating Dublin",

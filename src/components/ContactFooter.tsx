@@ -2,9 +2,11 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import {
   Check,
   Copy,
+  Lock,
   Mail,
   MapPin,
   Phone,
@@ -13,6 +15,7 @@ import {
   Clock,
 } from "lucide-react";
 import { SITE_CONFIG } from "@/lib/site-config";
+import { addLead, trackEvent } from "@/lib/admin-store";
 import { WhatsAppIcon } from "./WhatsAppWidget";
 
 const PROJECT_TYPES = [
@@ -40,6 +43,14 @@ export default function ContactFooter() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    addLead({
+      name: name.trim() || "Website Visitor",
+      phone: phone.trim(),
+      email: email.trim(),
+      area: area.trim() || "Dublin",
+      service: selectedType,
+      details: details.trim(),
+    });
     setSubmitted(true);
   };
 
@@ -483,6 +494,13 @@ export default function ContactFooter() {
             >
               {SITE_CONFIG.contacts.email.display}
             </a>
+            <Link
+              href="/admin"
+              className="inline-flex items-center gap-1 rounded-full border border-white/15 px-3 py-1 text-[11px] font-medium text-alabaster/75 transition-colors hover:border-ochre hover:text-white"
+            >
+              <Lock className="h-3 w-3 text-ochre" />
+              Admin
+            </Link>
           </div>
         </footer>
       </div>

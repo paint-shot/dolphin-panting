@@ -3,21 +3,28 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import GallerySection from "@/components/GallerySection";
+import PhotoGallery from "@/components/PhotoGallery";
 import VideoShowcase from "@/components/VideoShowcase";
 import ProcessTestimonials from "@/components/ProcessTestimonials";
 import ContactFooter from "@/components/ContactFooter";
 import WhatsAppWidget, { WhatsAppIcon } from "@/components/WhatsAppWidget";
+import VisitTracker from "@/components/VisitTracker";
 import { SITE_CONFIG } from "@/lib/site-config";
+import { getLibraryMedia } from "@/lib/library-media";
 
 export default function HomePage() {
+  const { photos, videos } = getLibraryMedia();
+
   return (
     <div className="min-h-screen bg-alabaster text-ink">
+      <VisitTracker />
       <Navbar />
       <main>
         <Hero />
         <Services />
         <GallerySection />
-        <VideoShowcase />
+        <PhotoGallery photos={photos} />
+        <VideoShowcase videos={videos} />
         <ProcessTestimonials />
         <ContactFooter />
       </main>

@@ -5,22 +5,22 @@ export const SITE_CONFIG = {
   serviceArea: "Dublin City & County (Northside, Southside & Surrounding Areas)",
   contacts: {
     primaryPhone: {
-      display: "085 220 0539",
-      raw: "0852200539",
-      e164: "353852200539",
-      href: "tel:0852200539",
-      whatsappHref:
-        "https://wa.me/353852200539?text=Hi%20Dolphin%20Painter%2C%20I%27d%20like%20to%20request%20a%20free%20painting%20quote%20in%20Dublin.",
-      label: "Primary Line",
-    },
-    secondaryPhone: {
       display: "089 960 9741",
       raw: "0899609741",
       e164: "353899609741",
       href: "tel:0899609741",
       whatsappHref:
         "https://wa.me/353899609741?text=Hi%20Dolphin%20Painter%2C%20I%27d%20like%20to%20request%20a%20free%20painting%20quote%20in%20Dublin.",
-      label: "Alternative Line",
+      label: "Primary Line",
+    },
+    secondaryPhone: {
+      display: "085 220 0539",
+      raw: "0852200539",
+      e164: "353852200539",
+      href: "tel:0852200539",
+      whatsappHref:
+        "https://wa.me/353852200539?text=Hi%20Dolphin%20Painter%2C%20I%27d%20like%20to%20request%20a%20free%20painting%20quote%20in%20Dublin.",
+      label: "Additional Line",
     },
     email: {
       display: "ramzynamtala@gmail.com",

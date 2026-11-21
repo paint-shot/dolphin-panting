@@ -84,18 +84,18 @@ export default function Hero() {
             </div>
 
             {/* Trust Row */}
-            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-3 text-xs font-medium tracking-wide text-alabaster/80 sm:text-sm">
+            <div className="mt-9 flex flex-wrap items-center gap-x-5 gap-y-2.5 text-xs font-medium tracking-wide text-alabaster/85 sm:gap-x-6 sm:text-sm">
               <span className="inline-flex items-center gap-2">
-                <ShieldCheck className="h-4 w-4 text-ochre" />
-                Fully Insured &amp; Tax Compliant
+                <ShieldCheck className="h-4 w-4 shrink-0 text-ochre" />
+                <span>Fully Insured &amp; Tax Compliant</span>
               </span>
               <span className="inline-flex items-center gap-2">
-                <CheckCircle2 className="h-4 w-4 text-ochre" />
-                Dust-Free Sanding System
+                <CheckCircle2 className="h-4 w-4 shrink-0 text-ochre" />
+                <span>Dust-Free Sanding System</span>
               </span>
               <span className="inline-flex items-center gap-2">
-                <CheckCircle2 className="h-4 w-4 text-ochre" />
-                Free 24hr Dublin Quotes
+                <CheckCircle2 className="h-4 w-4 shrink-0 text-ochre" />
+                <span>Free 24hr Dublin Quotes</span>
               </span>
             </div>
           </div>
